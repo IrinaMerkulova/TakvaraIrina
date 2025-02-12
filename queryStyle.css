@@ -6,6 +6,8 @@
 
 }
 #pikachu {
-    border: 5px solid black;
+    border: 3px solid black;
     border-radius: 50%;
+    width: 150px;
+    height: 150px;
 }
