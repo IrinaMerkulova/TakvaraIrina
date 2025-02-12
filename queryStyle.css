@@ -5,3 +5,7 @@
     width: 200px;
 
 }
+#pikachu {
+    border: 5px solid black;
+    border-radius: 50%;
+}
