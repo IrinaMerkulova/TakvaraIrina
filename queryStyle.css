@@ -10,3 +10,15 @@
     border: 5pt solid #000;
     border-radius: 50%;
 }
+
+#kool {
+    background: #000;
+    color: #fff;
+    border: 5pt solid #808080;
+    border-radius: 5px;
+}
+
+#kool:hover {
+    background: #808080;
+    border: 5pt solid #ffffff;
+}
