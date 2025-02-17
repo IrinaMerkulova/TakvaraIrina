@@ -5,3 +5,8 @@
     width: 200px;
 
 }
+
+#pilt {
+    border: 5pt solid #000;
+    border-radius: 50%;
+}
