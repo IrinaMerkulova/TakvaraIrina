@@ -29,6 +29,17 @@
             }
         }
 
+        function peidanaita(){
+            $('#pilt').slideToggle();
+            if(lahti){
+                lahti=false;
+                $('#nupp').val("Näita");
+            } else{
+                lahti=true;
+                $('#nupp').val("Peida");
+            }
+        }
+
         function start(){
             $('#tekst').mouseenter(punaseks);
             $('h1').mouseenter(siniseks);
