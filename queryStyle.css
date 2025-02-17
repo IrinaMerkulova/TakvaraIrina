@@ -31,5 +31,50 @@ select:focus {
     border-color:Crimson;
     box-shadow: 0px 0px 15px rgba(139, 0, 0, 0.6);
 }
-
+/* Lisa veel faili checkbox ja kujunda checkbox + label valikud oma maiyse järgi. */
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.checkbox input {
+    display: none;
+}
+.checkbox label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 40px;
+    font-size: 16px;
+}
+.checkbox label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border: 5px solid LightCoral;
+    border-radius: 5px;
+    background-color: white;
+    transition: 0.3s;
+    box-shadow: 0px 0px 15px rgba(139, 0, 0, 0.6);
+}
+checkbox label:hover:before {
+    box-shadow: 0px 0px 15px rgba(199, 21, 133, 0.8);
+}
+.checkbox input:checked + label:before {
+    background-color: DarkViolet;
+    border-color: LightPink;
+    box-shadow: 0px 0px 15px rgba(128, 0, 128, 0.7);
+}
+.checkbox input:checked + label:after {
+    content: "✔";
+    position: absolute;
+    left: 5px;
+    top: 30%;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
 
